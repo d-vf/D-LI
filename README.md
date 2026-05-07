@@ -44,6 +44,8 @@ and the inverter realizes it as the complex-power injection $\hat S_i^{\mathrm{c
 
  <img src="https://raw.githubusercontent.com/d-vf/D+LI/refs/heads/main/assets/DLres_plotly_convergence_analysis_png.png" width="50%">
 
+ DLres_plotly_convergence_analysis_png
+
  ## [Notebooks](implementation/)
 
 A. Var_Volt_Control_310725.ipynb [here](implementation/Var_Volt_Control_310725.ipynb)
