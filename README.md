@@ -18,24 +18,31 @@ Bus-injection equivalent of the local $P$--$Q$ voltage controller at bus $i$. Ea
 The update uses the local objective terms from $F(x,w,z)$, the hard projected constraints on $\mathbf w_i$ and $z_i$, the state projections, and the dualized nodal-balance residual $r_i$. The D+LI state $\mathbf s_i$ provides a local estimate of the shared controllable-injection vector. The controller computes the effective set-point $\hat{\mathbf u}_i=z_i\mathbf w_i=(\hat P_i,\hat Q_i),$
 and the inverter realizes it as the complex-power injection $\hat S_i^{\mathrm{ctrl}}=\hat P_i+j\hat Q_i$ at bus $i$.
 
-  <img src="https://raw.githubusercontent.com/d-vf/VD+LI//main/assets/network_44_WB_var_volt_png.png" width="50%">
+  <img src="https://raw.githubusercontent.com/d-vf/D-LI/refs/heads/main/assets/pq_controller.jpg" width="50%">
 
 #### Network
 
 * CIGRE low voltage radial distribution network (44 bus system)
   
-  <img src="https://raw.githubusercontent.com/d-vf/VD+LI//main/assets/network_44_WB_var_volt_png.png" alt="network_44" width="50%">
+  <img src="https://raw.githubusercontent.com/d-vf/VD+LI/refs/heads/main/assets/network_44_WB_var_volt_png.png" alt="network_44" width="50%">
 
 ### Voltage drop - Baseline (Non-intervention)
 
-  <img src="https://raw.githubusercontent.com/d-vf/D+LI//main/assets/bus_voltage_profile_before_png.png" alt="network_44" width="50%">
+  <img src="https://raw.githubusercontent.com/d-vf/D+LI/refs/heads/main/assets/bus_voltage_profile_before_png.png" width="50%">
 
 ### Voltage drop - Intervention
- <img src="https://raw.githubusercontent.com/d-vf/D+LI/main/assets/bus_voltage_profile_after_png.png" alt="network_44" width="50%">
+ <img src="https://raw.githubusercontent.com/d-vf/D+LI/refs/heads/main/assets/bus_voltage_profile_after_png.png" width="50%">
 
 ### Predicted vs. Validated Voltages
 
- <img src="https://raw.githubusercontent.com/d-vf/D+LI//main/assets/plotly_voltage_comparison_png.png" alt="network_44" width="50%">
+ <img src="https://raw.githubusercontent.com/d-vf/D+LI/refs/heads/main/assets/DLres_plotly_voltage_comparison_png.png" width="50%">
+
+### Voltage drop - Intervention
+ <img src="https://raw.githubusercontent.com/d-vf/D+LI/refs/heads/main/assets/bus_voltage_profile_after_png.png" width="50%">
+
+### Convergence
+
+ <img src="https://raw.githubusercontent.com/d-vf/D+LI/refs/heads/main/assets/DLres_plotly_convergence_analysis_png.png" width="50%">
 
  ## [Notebooks](implementation/)
 
